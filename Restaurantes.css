@@ -1,0 +1,115 @@
+/* ==================== RESTAURANTES ==================== */
+.restaurants-page {
+  padding: 40px 60px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 52px;
+  font-weight: 900;
+  color: #1e2937;
+}
+
+.header h2 {
+  font-size: 32px;
+  color: #475569;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 18px 25px;
+  border: 2px solid #e2e8f0;
+  border-radius: 50px;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #1e2937;
+}
+
+/* Grid de marcas */
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.brand-card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px 15px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.brand-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.brand-card img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.brand-card p {
+  font-weight: 600;
+  color: #1e2937;
+}
+
+/* Promociones */
+.section h3 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #1e2937;
+}
+
+.promo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.promo-item {
+  background: linear-gradient(135deg, #fff, #f8fafc);
+  border-radius: 20px;
+  padding: 25px;
+  border: 1px solid #e2e8f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.promo-tag {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ef4444;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 30px;
+}
+
+.promo-item h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.promo-item p {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e2937;
+}

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f1f5f9, #ffffff);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor general */
+.container {
+  width: 100%;
+  max-width: 1000px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+/* ==================== REGISTRO ==================== */
+.register-page {
+  padding: 80px 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 480px;
+}
+
+.back-btn {
+  font-size: 24px;
+  color: #64748b;
+  text-decoration: none;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.back-btn:hover {
+  color: #1e2937;
+}
+
+.form-box h1 {
+  font-size: 42px;
+  color: #1e2937;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 28px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #475569;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 18px 22px;
+  border: 2px solid #b6edf7;
+  border-radius: 14px;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #1e2937;
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  background: #1e2937;
+  color: white;
+  border: none;
+  padding: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #334155;
+  transform: translateY(-4px);
+}
+
+/* ==================== ESTILOS DE BIENVENIDA (por si usas el anterior) ==================== */
+.welcome-page {
+  padding: 120px 60px;
+  text-align: center;
+}
+
+.welcome-page .logo {
+  font-size: 110px;
+  font-weight: 900;
+  color: #1e2937;
+  letter-spacing: -10px;
+  margin-bottom: 40px;
+}
+
+.welcome-page h1 {
+  font-size: 48px;
+  color: #1e2937;
+}
+
+.welcome-page h2 {
+  font-size: 28px;
+  color: #475569;
+  margin: 20px 0 30px;
+}
+
+.welcome-page .description {
+  font-size: 21px;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #1e2937, #0f172a);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Marco del celular */
+.phone-frame {
+  width: 100%;
+  max-width: 380px;
+  height: 760px;
+  background: #111827;
+  border-radius: 60px;
+  padding: 12px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+  position: relative;
+  border: 8px solid #1f2937;
+  overflow: hidden;
+}
+
+/* Notch / Cámara */
+.camera-notch {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 28px;
+  background: #111827;
+  border-radius: 30px;
+  z-index: 10;
+}
+
+.camera {
+  width: 10px;
+  height: 10px;
+  background: #1e2937;
+  border-radius: 50%;
+}
+
+/* Pantalla */
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  background: #f8fafc;
+  border-radius: 48px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Barra de estado */
+.status-bar {
+  height: 50px;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  font-size: 14px;
+  color: #1e2937;
+}
+
+/* Header */
+.header-rest {
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.screen-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e2937;
+}
+
+.settings-icon {
+  font-size: 24px;
+}
+
+/* Contenido */
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+}
+
+/* Tarjeta promocional */
+.promo-card {
+  background: #FF6B00;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(255, 107, 0, 0.3);
+}
+
+.promo-content {
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.promo-content h2 {
+  font-size: 17.5px;
+  line-height: 1.45;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.promo-image {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 18px;
+}
+
+.know-more {
+  background: white;
+  color: #FF6B00;
+  border: none;
+  padding: 14px 50px;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 16.5px;
+  cursor: pointer;
+}
+
+/* Navegación inferior */
+.bottom-nav {
+  height: 75px;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #e2e8f0;
+}
+
+.nav-item {
+  font-size: 26px;
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+.nav-item.active {
+  color: #0f172a;
+}
