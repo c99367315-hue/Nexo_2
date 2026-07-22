@@ -1,0 +1,270 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(135deg,#3B82F6,#2563EB,#1E3A8A);
+
+}
+
+/* Tarjeta */
+
+.login-card{
+
+    width:430px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:45px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+    text-align:center;
+
+}
+
+/* Avatar */
+
+.avatar{
+
+    width:95px;
+    height:95px;
+
+    margin:auto;
+    margin-bottom:20px;
+
+    border-radius:50%;
+
+    background:#2563EB;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+
+    font-size:42px;
+
+}
+
+.login-card h1{
+
+    color:#222;
+
+    margin-bottom:8px;
+
+}
+
+.login-card p{
+
+    color:#777;
+
+    margin-bottom:35px;
+
+}
+
+/* Inputs */
+
+.input-box{
+
+    position:relative;
+
+    margin-bottom:20px;
+
+}
+
+.input-box i{
+
+    position:absolute;
+
+    left:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#777;
+
+    font-size:15px;
+
+}
+
+.input-box input,
+.input-box select{
+
+    width:100%;
+
+    padding:15px 18px 15px 50px;
+
+    border:2px solid #ddd;
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    background:white;
+
+}
+
+.input-box select{
+
+    appearance:none;
+
+    cursor:pointer;
+
+}
+
+.input-box input:focus,
+.input-box select:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 8px rgba(37,99,235,.2);
+
+}
+
+/* Opciones */
+
+.options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:25px 0;
+
+    font-size:14px;
+
+}
+
+.options label{
+
+    color:#555;
+
+}
+
+.options a{
+
+    text-decoration:none;
+
+    color:#2563EB;
+
+    font-weight:500;
+
+}
+
+.options a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* Botón principal */
+
+.btn-login{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563EB;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn-login:hover{
+
+    background:#1E40AF;
+
+    transform:translateY(-2px);
+
+}
+
+/* Botón secundario */
+
+.btn-register{
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:15px;
+
+    border:2px solid #2563EB;
+
+    border-radius:10px;
+
+    background:white;
+
+    color:#2563EB;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn-register:hover{
+
+    background:#2563EB;
+
+    color:white;
+
+}
+
+/* Responsive */
+
+@media(max-width:500px){
+
+.login-card{
+
+    width:92%;
+
+    padding:35px;
+
+}
+
+.options{
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+}
