@@ -1,0 +1,288 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+
+}
+
+
+
+body{
+
+    background:#f4f7ff;
+
+}
+
+
+
+
+/* BARRA SUPERIOR */
+
+.barra{
+
+    height:80px;
+
+    background:#000000;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 70px;
+
+    color:rgb(255, 0, 0);
+
+}
+
+
+
+.logo{
+
+    font-size:35px;
+
+    font-weight:bold;
+
+}
+
+
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-left:40px;
+
+    font-size:18px;
+
+}
+
+
+
+nav a:hover{
+
+    opacity:0.7;
+
+}
+
+
+
+/* CONTENIDO */
+
+.contenido{
+
+    padding:50px 80px;
+
+}
+
+
+
+.titulo h1{
+
+    font-size:38px;
+
+    color:#000000;
+
+}
+
+
+
+.titulo p{
+
+    color:#666;
+
+    margin-top:10px;
+
+    font-size:18px;
+
+}
+
+
+
+
+/* AREA PRINCIPAL */
+
+
+.zona-calificacion{
+
+
+    margin-top:50px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:40px;
+
+    display:flex;
+
+    gap:70px;
+
+    width:900px;
+
+    box-shadow:0px 10px 30px rgba(0,0,0,0.12);
+
+
+}
+
+
+
+/* REPARTIDOR */
+
+
+.repartidor{
+
+    width:300px;
+
+    text-align:center;
+
+    border-right:1px solid #ddd;
+
+    padding-right:40px;
+
+}
+
+
+
+.repartidor img{
+
+
+    width:150px;
+
+    height:150px;
+
+    border-radius:50%;
+
+
+}
+
+
+
+.repartidor h2{
+
+
+    margin-top:20px;
+
+    color:#333;
+
+
+}
+
+
+
+.repartidor span{
+
+
+    color:#777;
+
+}
+
+
+
+/* CALIFICACION */
+
+
+.calificar{
+
+
+    width:450px;
+
+
+}
+
+
+
+.calificar h3{
+
+
+    font-size:22px;
+
+    color:#333;
+
+}
+
+
+
+.estrellas{
+
+
+    margin:25px 0;
+
+
+}
+
+
+
+.estrellas span{
+
+
+    font-size:45px;
+
+    color:#ffc107;
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+textarea{
+
+
+    width:100%;
+
+    height:130px;
+
+    border-radius:15px;
+
+    border:1px solid #ccc;
+
+    padding:20px;
+
+    font-size:16px;
+
+    resize:none;
+
+
+}
+
+
+
+button{
+
+
+    margin-top:25px;
+
+    background:#ff0000;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+
+}
+
+
+
+button:hover{
+
+
+    background:#004dcc;
+
+
+}
