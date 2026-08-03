@@ -1,0 +1,242 @@
+/* =========================
+   VARIABLES & SETUP GENERAL
+========================= */
+
+:root {
+    --primary: #6c5ce7;
+    --primary-hover: #5b4bc4;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --bg-page: #f8fafc;
+    --bg-card: #ffffff;
+    --border-color: #f1f5f9;
+    --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* =========================
+   CONTENEDOR GLOBAL
+========================= */
+
+.app-layout {
+    width: 100%;
+    max-width: 600px; /* Tamaño optimizado tipo móvil / tablet ligera */
+    min-height: 100vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================
+   BANNER SUPERIOR / HERO
+========================= */
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+.hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.5) 100%);
+}
+
+/* =========================
+   CONTENIDO PRINCIPAL
+========================= */
+
+.main-content {
+    flex: 1;
+    padding: 24px 20px 90px 20px; /* Bottom padding para evitar solapamiento con la barra */
+    background: var(--bg-page);
+    border-radius: 24px 24px 0 0;
+    margin-top: -24px;
+    position: relative;
+    z-index: 2;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.section-header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-main);
+    letter-spacing: -0.5px;
+}
+
+.badge {
+    background: #eef2ff;
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+/* =========================
+   CARDS DE PRODUCTOS
+========================= */
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.product-card {
+    background: var(--bg-card);
+    border-radius: 18px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.product-image {
+    width: 100px;
+    height: 90px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f8fafc;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 4px;
+}
+
+.product-info .description {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.product-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-footer .price {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.add-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: var(--primary);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.add-btn:hover {
+    background: var(--primary-hover);
+}
+
+/* =========================
+   BARRA NAVEGACIÓN BOTTOM
+========================= */
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid var(--border-color);
+    z-index: 100;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-item.active,
+.nav-item:hover {
+    color: var(--primary);
+}

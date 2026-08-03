@@ -24,15 +24,15 @@ body {
 }
 
 
-/* =========================
-   NAVBAR
-========================= */
+/* BARRA SUPERIOR */
 
-.navbar {
+.barra-superior {
 
-    height: 86px;
+    width: 100%;
 
-    background: white;
+    height: 75px;
+
+    background: #171717;
 
     display: flex;
 
@@ -40,80 +40,67 @@ body {
 
     justify-content: space-between;
 
-    padding: 0 4%;
+    padding: 0 50px;
 
-    border-bottom: 1px solid #eeeeee;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 
 }
 
-
-/* LOGO NEXO */
+/* LOGO */
 
 .logo {
 
-    display: flex;
+    color: #e50914;
 
-    align-items: center;
-
-    gap: 10px;
-
-    font-size: 32px;
+    font-size: 30px;
 
     font-weight: bold;
 
 }
 
 
-.logo-icon {
-
-    width: 40px;
-
-    height: 40px;
-
-    background: #e31b16;
-
-    color: white;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 25px;
-
-    font-weight: bold;
-
-    border-radius: 8px;
-
-}
-
+/* MENÚ */
 
 .menu {
 
     display: flex;
 
-    gap: 45px;
+    align-items: center;
+
+    gap: 15px;
 
 }
 
 
 .menu a {
 
+    color: #cccccc;
+
     text-decoration: none;
 
-    color: #000000;
+    padding: 12px 18px;
 
-    font-size: 16px;
+    border-radius: 8px;
+
+    transition: 0.3s;
 
 }
 
 
-.menu a:hover,
+.menu a:hover {
 
-.menu .active {
+    background: #e50914;
 
-    color: #fc0404;
+    color: white;
+
+}
+
+
+.menu .activo {
+
+    background: #e50914;
+
+    color: white;
 
 }
 
