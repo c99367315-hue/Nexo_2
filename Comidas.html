@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Comida</title>
-
+    <title>NEXO - Comida</title>
     <link rel="stylesheet" href="Comidas.css">
 </head>
-
 <body>
 
-    <!-- BARRA SUPERIOR -->
-    <header class="barra-superior">
+    <!-- NAVBAR -->
+
+    <header class="navbar">
 
         <div class="logo">
-            NEXO
+            <span>NEXO</span>
         </div>
 
         <nav class="menu">
+<<<<<<< HEAD
 
             <a href="#">🏠 Inicio</a>
 
@@ -32,258 +31,156 @@
 
             <a href="#">👤 Perfil</a>
 
+=======
+            <a href="#">Inicio</a>
+            <a href="#" class="active">Comida</a>
+            <a href="#">Restaurantes</a>
+            <a href="#">Mis pedidos</a>
+>>>>>>> 69db46e6ec54e5de7816da7454322bcb6394bc71
         </nav>
+
+        <div class="header-right">
+            <div class="cart">🛒 <span>0</span></div>
+            <div class="profile">👤</div>
+        </div>
 
     </header>
 
+    <!-- HERO -->
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main class="contenido">
+    <section class="hero">
 
-        <section class="encabezado">
+        <div class="hero-content">
 
-            <div>
-                <h1>Comida</h1>
+            <h1>¿Qué quieres comer hoy?</h1>
 
-                <p>
-                    Encuentra tus comidas favoritas
-                </p>
+            <p>
+                Encuentra las mejores comidas y combos al mejor precio.
+            </p>
+
+            <div class="search-box">
+                <input type="text" placeholder="Buscar comida...">
+                <button>🔍</button>
             </div>
-
-            <div class="usuario">
-                👤
-            </div>
-
-        </section>
-
-
-        <!-- BUSCADOR -->
-        <div class="buscador">
-
-            <input 
-                type="text"
-                placeholder="Buscar hamburguesas, pizza, pollo..."
-            >
-
-            <button>
-                🔍 Buscar
-            </button>
 
         </div>
 
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=90" alt="Hamburguesa">
+        </div>
 
-        <!-- CATEGORÍAS -->
-        <section class="titulo">
+    </section>
 
-            <h2>
-                Categorías de comida
-            </h2>
+    <!-- CATEGORIAS -->
 
-            <p>
-                Elige el tipo de comida que deseas disfrutar
-            </p>
+    <section class="categorias">
 
-        </section>
+        <button>🍔 Hamburguesas</button>
+        <button>🍗 Pollo</button>
+        <button>🍕 Pizza</button>
+        <button>🌭 Perros</button>
+        <button>🍟 Papas</button>
+        <button>🍰 Postres</button>
 
+    </section>
 
-        <section class="categorias">
+    <!-- OFERTA -->
 
+    <section class="oferta">
 
-            <!-- HAMBURGUESAS -->
+        <h2>🔥 Oferta del Día</h2>
 
-            <div class="card-comida">
+        <p>
+            20% de descuento en todos los combos Frisby.
+        </p>
 
-                <div class="imagen-comida">
+    </section>
 
-                    <img 
-                        src="img/hamburguesa.png"
-                        alt="Hamburguesas"
-                    >
+    <!-- COMIDAS -->
 
-                </div>
+    <section class="productos">
 
-                <div class="info-comida">
+        <div class="card">
 
-                    <h3>
-                        Hamburguesas
-                    </h3>
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=90">
 
-                    <p>
-                        McDonald's
-                    </p>
+            <div class="info">
 
-                    <button>
-                        Ver comidas
-                    </button>
+                <h3>Hamburguesa Doble</h3>
 
-                </div>
+                <p>Burger King</p>
 
-            </div>
+                <span>⭐⭐⭐⭐⭐</span>
 
+                <h4>$24.900</h4>
 
-            <!-- SÁNDWICHES -->
-
-            <div class="card-comida">
-
-                <div class="imagen-comida">
-
-                    <img 
-                        src="img/sandwich.png"
-                        alt="Sándwiches"
-                    >
-
-                </div>
-
-                <div class="info-comida">
-
-                    <h3>
-                        Sándwiches
-                    </h3>
-
-                    <p>
-                        Subway
-                    </p>
-
-                    <button>
-                        Ver comidas
-                    </button>
-
-                </div>
+                <button>Agregar</button>
 
             </div>
 
+        </div>
 
-            <!-- HELADOS -->
+        <div class="card">
 
-            <div class="card-comida">
+            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=700&q=90">
 
-                <div class="imagen-comida">
+            <div class="info">
 
-                    <img 
-                        src="img/helado.png"
-                        alt="Helados"
-                    >
+                <h3>Combo Personal</h3>
 
-                </div>
+                <p>Frisby</p>
 
-                <div class="info-comida">
+                <span>⭐⭐⭐⭐⭐</span>
 
-                    <h3>
-                        Helados
-                    </h3>
+                <h4>$25.900</h4>
 
-                    <p>
-                        Santa Rosa
-                    </p>
-
-                    <button>
-                        Ver comidas
-                    </button>
-
-                </div>
+                <button>Agregar</button>
 
             </div>
 
+        </div>
 
-            <!-- POLLO -->
+        <div class="card">
 
-            <div class="card-comida">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=90">
 
-                <div class="imagen-comida">
+            <div class="info">
 
-                    <img 
-                        src="img/pollo.png"
-                        alt="Pollo"
-                    >
+                <h3>Pizza Suprema</h3>
 
-                </div>
+                <p>Pizza Hut</p>
 
-                <div class="info-comida">
+                <span>⭐⭐⭐⭐⭐</span>
 
-                    <h3>
-                        Pollo
-                    </h3>
+                <h4>$29.900</h4>
 
-                    <p>
-                        Frisby
-                    </p>
-
-                    <button>
-                        Ver comidas
-                    </button>
-
-                </div>
+                <button>Agregar</button>
 
             </div>
 
+        </div>
 
-            <!-- POLLO FRITO -->
+        <div class="card">
 
-            <div class="card-comida">
+            <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=900&q=90">
 
-                <div class="imagen-comida">
+            <div class="info">
 
-                    <img 
-                        src="img/pollo-frito.png"
-                        alt="Pollo frito"
-                    >
+                <h3>Combo Familiar</h3>
 
-                </div>
+                <p>KFC</p>
 
-                <div class="info-comida">
+                <span>⭐⭐⭐⭐⭐</span>
 
-                    <h3>
-                        Pollo frito
-                    </h3>
+                <h4>$49.900</h4>
 
-                    <p>
-                        KFC
-                    </p>
-
-                    <button>
-                        Ver comidas
-                    </button>
-
-                </div>
+                <button>Agregar</button>
 
             </div>
 
+        </div>
 
-            <!-- PIZZA -->
-
-            <div class="card-comida">
-
-                <div class="imagen-comida">
-
-                    <img 
-                        src="img/pizza.png"
-                        alt="Pizza"
-                    >
-
-                </div>
-
-                <div class="info-comida">
-
-                    <h3>
-                        Pizza
-                    </h3>
-
-                    <p>
-                        Pizza Hut
-                    </p>
-
-                    <button>
-                        Ver comidas
-                    </button>
-
-                </div>
-
-            </div>
-
-
-        </section>
-
-    </main>
+    </section>
 
 </body>
 </html>
