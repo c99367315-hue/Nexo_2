@@ -1,0 +1,802 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f7f8fa;
+
+    color: #151923;
+
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+
+    height: 86px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 4%;
+
+    border-bottom: 1px solid #eeeeee;
+
+}
+
+
+/* LOGO NEXO */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+}
+
+
+.logo-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    background: #e31b16;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    border-radius: 8px;
+
+}
+
+
+.menu {
+
+    display: flex;
+
+    gap: 45px;
+
+}
+
+
+.menu a {
+
+    text-decoration: none;
+
+    color: #000000;
+
+    font-size: 16px;
+
+}
+
+
+.menu a:hover,
+
+.menu .active {
+
+    color: #fc0404;
+
+}
+
+
+.header-right {                 
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+}
+
+
+.cart {
+
+    color: #e31b16;
+
+    font-size: 20px;
+
+}
+
+
+.cart span {
+
+    font-size: 15px;
+
+}
+
+
+.profile {
+
+    width: 42px;
+
+    height: 42px;
+
+    background: #222222;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    min-height: 300px;
+
+    padding: 55px 9%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            #f8f9fb 45%,
+
+            #ffffff 100%
+
+        );
+
+}
+
+
+.hero-content {
+
+    width: 50%;
+
+}
+
+
+.hero h1 {
+
+    font-size: 46px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.hero p {
+
+    color: #555555;
+
+    font-size: 18px;
+
+    margin-bottom: 28px;
+
+}
+
+
+.search-box {
+
+    width: 560px;
+
+    height: 58px;
+
+    background: white;
+
+    border: 1px solid #e1e1e1;
+
+    border-radius: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 0 22px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.04);
+
+}
+
+
+.search-box span {
+
+    font-size: 22px;
+
+}
+
+
+.search-box input {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 16px;
+
+}
+
+
+.hero-food {
+
+    width: 43%;
+
+    height: 300px;
+
+    overflow: hidden;
+
+    border-radius: 50% 0 0 50%;
+
+}
+
+
+.hero-food img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+main {
+
+    width: 100%;
+
+}
+
+
+.categories-section,
+
+.restaurants-section,
+
+.combos-section {
+
+    width: 82%;
+
+    margin: auto;
+
+}
+
+
+h2 {
+
+    font-size: 22px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================
+   CATEGORÍAS
+========================= */
+
+.categories-section {
+
+    padding-top: 25px;
+
+}
+
+
+.categories {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    overflow-x: auto;
+
+}
+
+
+.category {
+
+    border: 1px solid #e5e5e5;
+
+    background: white;
+
+    border-radius: 30px;
+
+    padding: 13px 23px;
+
+    font-size: 15px;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+}
+
+
+.category.active {
+
+    background: #e31b16;
+
+    color: white;
+
+    border-color: #e31b16;
+
+}
+
+
+.more {
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================
+   RESTAURANTES
+========================= */
+
+.restaurants-section {
+
+    padding-top: 35px;
+
+}
+
+
+.restaurants {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 45px;
+
+}
+
+
+.restaurant-card {
+
+    background: white;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    min-height: 140px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+
+    transition: 0.3s;
+
+}
+
+
+.restaurant-card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+.restaurant-logo {
+
+    width: 120px;
+
+    height: 140px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 15px;
+
+}
+
+
+.restaurant-logo img {
+
+    max-width: 100%;
+
+    max-height: 100%;
+
+    object-fit: contain;
+
+}
+
+
+.frisby-logo {
+
+    background: #f58220;
+
+}
+
+
+.kfc-logo {
+
+    background: #d71920;
+
+}
+
+
+.burger-logo {
+
+    background: #f3e2c3;
+
+}
+
+
+.restaurant-info {
+
+    padding: 20px;
+
+    flex: 1;
+
+}
+
+
+.restaurant-info h3 {
+
+    font-size: 20px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.restaurant-info p {
+
+    color: #777777;
+
+    font-size: 14px;
+
+    margin-bottom: 13px;
+
+}
+
+
+.rating {
+
+    font-size: 13px;
+
+    color: #555555;
+
+}
+
+
+.arrow {
+
+    font-size: 35px;
+
+    color: #555555;
+
+    margin-right: 20px;
+
+}
+
+
+/* =========================
+   COMBOS
+========================= */
+
+.combos-section {
+
+    padding-top: 40px;
+
+    padding-bottom: 60px;
+
+}
+
+
+.section-title {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.section-title a {
+
+    color: #e31b16;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+}
+
+
+.combo-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 28px;
+
+}
+
+
+.combo-card {
+
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 16px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+
+    transition: 0.3s;
+
+}
+
+
+.combo-card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+.combo-card h3 {
+
+    font-size: 17px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.combo-image {
+
+    width: 100%;
+
+    height: 170px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.combo-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.combo-card p {
+
+    color: #555555;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.combo-bottom {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.combo-bottom strong {
+
+    color: #e31b16;
+
+    font-size: 20px;
+
+}
+
+
+.combo-bottom button {
+
+    width: 38px;
+
+    height: 38px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #e31b16;
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+}
+
+
+.combo-bottom button:hover {
+
+    background: #b91511;
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .restaurants {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .combo-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .navbar {
+
+        padding: 0 20px;
+
+    }
+
+
+    .menu {
+
+        display: none;
+
+    }
+
+
+    .hero {
+
+        padding: 40px 20px;
+
+        display: block;
+
+    }
+
+
+    .hero-content {
+
+        width: 100%;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 34px;
+
+    }
+
+
+    .search-box {
+
+        width: 100%;
+
+    }
+
+
+    .hero-food {
+
+        width: 100%;
+
+        margin-top: 30px;
+
+    }
+
+
+    .categories-section,
+
+    .restaurants-section,
+
+    .combos-section {
+
+        width: 90%;
+
+    }
+
+
+    .combo-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
