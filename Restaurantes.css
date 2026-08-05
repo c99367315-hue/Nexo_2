@@ -17,60 +17,109 @@ background:#fffefe;
 
 
 
-/* BARRA */
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
 
-.barra{
+* {
 
-height:80px;
+    margin: 0;
 
-background:#000000;
+    padding: 0;
 
-display:flex;
-
-align-items:center;
-
-justify-content:space-between;
-
-padding:0 60px;
+    box-sizing: border-box;
 
 }
 
 
+body {
 
-.logo{
+    font-family: Arial, Helvetica, sans-serif;
 
-color:rgb(255, 0, 0);
+    background: #f7f8fa;
 
-font-size:35px;
-
-font-weight:bold;
-
-}
-
-
-
-nav a{
-
-color:rgb(255, 255, 255);
-
-text-decoration:none;
-
-margin-left:35px;
-
-font-size:18px;
+    color: #151923;
 
 }
 
 
-.activo{
+/* BARRA SUPERIOR */
 
-background:white;
+.barra-superior {
 
-color: red;
+    width: 100%;
 
-padding:10px 20px;
+    height: 75px;
 
-border-radius:10px;
+    background: #171717;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 50px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+
+}
+
+/* LOGO */
+
+.logo {
+
+    color: #e50914;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+}
+
+
+/* MENÚ */
+
+.menu {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+.menu a {
+
+    color: #cccccc;
+
+    text-decoration: none;
+
+    padding: 12px 18px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+
+}
+
+
+.menu a:hover {
+
+    background: #e50914;
+
+    color: white;
+
+}
+
+
+.menu .activo {
+
+    background: #e50914;
+
+    color: white;
 
 }
 
