@@ -1,66 +1,273 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NEXO - Restaurantes</title>
-  <link rel="stylesheet" href="Restaurantes.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NEXO Restaurantes</title>
+
+<link rel="stylesheet" href="Restaurantes.css">
+
 </head>
+
+
 <body>
-  
-  <div class="container restaurants-page">
-    <div class="header">
-      <h1>NEXO</h1>
-      <h2>Restaurantes</h2>
+
+
+<header class="barra">
+
+    <div class="logo">
+        NEXO
     </div>
 
-    <div class="search-bar">
-      <input type="text" placeholder="Buscar restaurantes o comidas...">
-    </div>
 
-    <div class="brands-grid">
-      <div class="brand-card">
-        <img src="https://via.placeholder.com/150/FFCC00/000000?text=McD" alt="McDonalds">
-        <p>McDonald's</p>
-      </div>
-      <div class="brand-card">
-        <img src="https://via.placeholder.com/150/FF0000/FFFFFF?text=SR" alt="Santa Rosa">
-        <p>Santa Rosa</p>
-      </div>
-      <div class="brand-card">
-        <img src="https://via.placeholder.com/150/FF6600/FFFFFF?text=FRISBY" alt="Frisby">
-        <p>Frisby</p>
-      </div>
-      <div class="brand-card">
-        <img src="https://via.placeholder.com/150/00CC00/FFFFFF?text=SUBWAY" alt="Subway">
-        <p>Subway</p>
-      </div>
-      <div class="brand-card">
-        <img src="https://via.placeholder.com/150/FF0000/FFFFFF?text=KFC" alt="KFC">
-        <p>KFC</p>
-      </div>
-      <div class="brand-card">
-        <img src="https://via.placeholder.com/150/FF0000/FFFFFF?text=PH" alt="Pizza Hut">
-        <p>Pizza Hut</p>
-      </div>
-    </div>
+    <nav>
 
-    <div class="section">
-      <h3>Promociones del día</h3>
-      <div class="promo-grid">
-        <div class="promo-item">
-          <div class="promo-tag">20% OFF</div>
-          <h4>Combo Familiar Frisby</h4>
-          <p>$89.900</p>
-        </div>
-        <div class="promo-item">
-          <div class="promo-tag">Nuevo</div>
-          <h4>McCombo + McFlurry</h4>
-          <p>$45.900</p>
-        </div>
-      </div>
-    </div>
-  </div>
+          <a href="#">🏠 Inicio</a>
+
+                <a href="#">🍔 Comida</a>
+
+                <a href="#" class="activo">🍽 Restaurantes</a>
+
+                <a href="#">🛒 Carrito</a>
+
+                <a href="#">👤 Perfil</a>
+    </nav>
+
+</header>
+
+
+
+<section class="contenido">
+
+
+<h1>
+    Restaurantes disponibles
+</h1>
+
+
+
+
+<div class="lista-restaurantes">
+
+
+
+<!-- MCDONALD'S -->
+
+<div class="card">
+
+<img src="https://1000marcas.net/wp-content/uploads/2019/11/McDonalds-logo.png">
+
+
+<h2>
+McDonald's
+</h2>
+
+
+<p>
+Hamburguesas, combos y bebidas
+</p>
+
+
+<div class="estrellas">
+★★★★★
+</div>
+
+
+<button>
+Ver restaurante
+</button>
+
+
+</div>
+
+
+
+
+
+<!-- FRISBY -->
+
+<div class="card">
+
+<img src="https://www.valoraanalitik.com/wp-content/uploads/2025/05/Frisby-1024x597.jpg">
+
+
+<h2>
+Frisby
+</h2>
+
+
+<p>
+Pollo colombiano y combos 
+</p>
+
+
+<div class="estrellas">
+★★★★★
+</div>
+
+
+<button>
+Ver restaurante
+</button>
+
+
+</div>
+
+
+
+
+
+
+<!-- SUBWAY -->
+
+
+<div class="card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc8HgNSp_Gpo4Hzm-KAL146u27IQuiQOrTS_DCQQhLxA&s">
+
+
+<h2>
+Subway
+</h2>
+
+
+<p>
+Sándwiches frescos y bebidas
+</p>
+
+
+<div class="estrellas">
+★★★★★
+</div>
+
+
+<button>
+Ver restaurante
+</button>
+
+
+</div>
+
+
+
+
+
+
+<!-- KFC -->
+
+
+<div class="card">
+
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr3g3D_Tan0wPlrY-Yyl1HprPhfWAmjLlOtAEAnGO894p6a1PsAVGYvUK9&s=10">
+
+
+<h2>
+KFC
+</h2>
+
+
+<p>
+Pollo frito y combos familiares
+</p>
+
+
+<div class="estrellas">
+★★★★★
+</div>
+
+
+<button>
+Ver restaurante
+</button>
+
+
+</div>
+
+
+
+
+
+
+<!-- PIZZA HUT -->
+
+
+<div class="card">
+
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIQrGq4t4Gd7zjRrDFCtlMQcSHGktuGa4RQxntroyH40okvjHMrIgco_yV&s=10">
+
+
+<h2>
+Pizza Hut
+</h2>
+
+
+<p>
+Pizzas, promociones y combos
+</p>
+
+
+<div class="estrellas">
+★★★★★
+</div>
+
+
+<button>
+Ver restaurante
+</button>
+
+
+</div>
+
+
+
+
+
+
+<!-- SANTA ROSA -->
+
+
+<div class="card">
+
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5LbVGUfKk77I4Wgjt4rG6DNFo_vGytVCEXfLBWSQ6Nw&s">
+
+
+<h2>
+Santa Rosa
+</h2>
+
+
+<p>
+Comida variada y platos especiales
+</p>
+
+
+<div class="estrellas">
+★★★★★
+</div>
+
+
+<button>
+Ver restaurante
+</button>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
 
 </body>
 </html>
