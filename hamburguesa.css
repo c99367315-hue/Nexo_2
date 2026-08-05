@@ -118,7 +118,7 @@ body{
 
     font-size:38px;
 
-    color:#000000;
+    color:#c71111;
 
 }
 
@@ -189,11 +189,11 @@ body{
 .repartidor img{
 
 
-    width:150px;
+    width:250px;
 
-    height:150px;
+    height:250px;
 
-    border-radius:50%;
+    border-radius:10%;
 
 
 }
