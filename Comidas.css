@@ -37,9 +37,21 @@ body{
     border-radius:8px;
 }
 
-.menu a:hover,
-.active{
-    background:#e50914;
+.menu a:hover {
+
+    background: #e50914;
+
+    color: white;
+
+}
+
+
+.menu .activo {
+
+    background: #e50914;
+
+    color: white;
+
 }
 
 .header-right{
