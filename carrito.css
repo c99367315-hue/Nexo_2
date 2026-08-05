@@ -106,7 +106,7 @@ body {
 
 .contenido-principal {
 
-    padding: 50px;
+    padding: 0px;
 
     display: flex;
 
@@ -115,5 +115,57 @@ body {
     align-items: center;
 
     gap: 30px;
+
+}
+
+.resumen{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background: #fff;
+    border-top: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,.1);
+    z-index: 1000;
+}
+
+
+
+
+.titulo {
+
+    background-color: #ff1100;
+  
+    text-align: center;
+
+    font-size: 40px;
+
+    color: #ffffff;
+
+    width: 100%;
+
+    border-color: #151923;
+    
+    padding: 28px;
+
+}
+
+.bt {
+
+    background-color: #ff1100;
+
+    color: #ffffff;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    border-radius: 5px;
 
 }
