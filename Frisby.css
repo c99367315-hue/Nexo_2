@@ -212,12 +212,12 @@ cursor:pointer;
     margin:15px 0 20px;
 }
 
-<<<<<<< HEAD
+
 button:hover{
 
 background:rgb(0, 48, 206);
-=======
 
+}
 /* BOTÓN */
 
 .boton {
@@ -249,6 +249,6 @@ background:rgb(0, 48, 206);
     background: #f7c600;
 
     color: #000000;
->>>>>>> c70aa9cdf0c66a3fcca012c1e58a3135bba381b1
+
 
 }
