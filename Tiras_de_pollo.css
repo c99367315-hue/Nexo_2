@@ -137,7 +137,7 @@ body {
 
 .titulo p {
 
-    color: #020000;
+    color: #363232;
 
     margin-top: 10px;
 
@@ -247,7 +247,7 @@ body {
 
 .producto span {
 
-    color: #000000;
+    color: #777;
 
 }
 
@@ -401,7 +401,7 @@ textarea{
 
     border-radius:15px;
 
-    border:1px solid #ccc;
+    border:1px solid #b6b6b6;
 
     padding:20px;
 
