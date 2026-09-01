@@ -175,6 +175,30 @@ text-align: center;
 align-items: center;
 
 
+.boton {
+
+    display: block;
+
+    margin: 15px auto auto;
+
+    background: #e30613;
+
+    color: white;
+
+    border: none;
+
+    padding: 17px 60px;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    margin-bottom: 10px;
+
+}
+
 }
 
 
