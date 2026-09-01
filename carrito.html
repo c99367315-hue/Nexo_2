@@ -1,287 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nexo - Carrito</title>
+        <title>Nexo - Inicio</title>
 
-    <link rel="stylesheet" href="carrito.css">
-</head>
+        <link rel="stylesheet" href="carrito.css">
+    </head>
 
-<body>
+    <body>
 
-    <!-- =========================
-         BARRA SUPERIOR
-    ========================== -->
+        <!-- BARRA SUPERIOR -->
+        <header class="barra-superior">
 
-    <header class="barra-superior">
+            <div class="logo">
+                NEXO
+            </div>
 
-        <div class="logo">
-            NEXO
-        </div>
+            <nav class="menu">
 
-        <nav class="menu">
+                <a href="#">🏠 Inicio</a>
 
-            <a href="#">
-                🏠 Inicio
-            </a>
+                <a href="#">🍔 Comida</a>
 
-            <a href="#">
-                🍔 Comida
-            </a>
+                <a href="#">🍽 Restaurantes</a>
 
-            <a href="#">
-                🍽 Restaurantes
-            </a>
+                <a href="#" class="activo">🛒 Carrito</a>
 
-            <a href="#" class="activo">
-                🛒 Carrito
-            </a>
+                <a href="#">👤 Perfil</a>
 
-            <a href="#">
-                👤 Perfil
-            </a>
+                <a href="#">🍴 Mis pedidos</a> 
 
-            <a href="#">
-                🍴 Mis pedidos
-            </a>
+            </nav>
 
-        </nav>
+        </header>
 
-    </header>
+        <main class="contenido-principal">
 
+            <div class="titulo">
 
-    <!-- =========================
-         CONTENIDO PRINCIPAL
-    ========================== -->
-
-    <main class="contenido-principal">
-
-        <!-- TÍTULO -->
-
-        <section class="titulo">
-
-            <h1>
-                Carrito de compras
-            </h1>
-
-            <p>
-                Revisa tus productos antes de realizar tu pedido
-            </p>
-
-        </section>
-
-
-        <!-- CONTENIDO DEL CARRITO -->
-
-        <section class="carrito-contenido">
-
-
-            <!-- =========================
-                 PRODUCTOS
-            ========================== -->
-
-            <div class="productos">
-
-                <h2>
-                    Tus productos
-                </h2>
-
-
-                <!-- PRODUCTO 1 -->
-
-                <article class="producto">
-
-                    <div class="producto-imagen">
-
-                        <!-- CAMBIA ESTA IMAGEN POR LA TUYA -->
-                        <img
-                            src="img/producto1.jpg"
-                            alt="Producto 1"
-                        >
-
-                    </div>
-
-
-                    <div class="producto-info">
-
-                        <h3>
-                            Combo Personal
-                        </h3>
-
-                        <p>
-                            Pollo, papas y bebida.
-                        </p>
-
-                        <!-- CAMBIA EL PRECIO -->
-                        <strong class="precio">
-                            $25.900
-                        </strong>
-
-                    </div>
-
-
-                    <div class="producto-acciones">
-
-                        <div class="cantidad">
-
-                            <button class="cantidad-btn">
-                                −
-                            </button>
-
-                            <span>
-                                1
-                            </span>
-
-                            <button class="cantidad-btn">
-                                +
-                            </button>
-
-                        </div>
-
-                        <button class="eliminar">
-                            🗑 Eliminar
-                        </button>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- PRODUCTO 2 -->
-
-                <article class="producto">
-
-                    <div class="producto-imagen">
-
-                        <!-- CAMBIA ESTA IMAGEN POR LA TUYA -->
-                        <img
-                            src="img/producto2.jpg"
-                            alt="Producto 2"
-                        >
-
-                    </div>
-
-
-                    <div class="producto-info">
-
-                        <h3>
-                            Hamburguesa Clásica
-                        </h3>
-
-                        <p>
-                            Hamburguesa, papas y bebida.
-                        </p>
-
-                        <!-- CAMBIA EL PRECIO -->
-                        <strong class="precio">
-                            $24.900
-                        </strong>
-
-                    </div>
-
-
-                    <div class="producto-acciones">
-
-                        <div class="cantidad">
-
-                            <button class="cantidad-btn">
-                                −
-                            </button>
-
-                            <span>
-                                1
-                            </span>
-
-                            <button class="cantidad-btn">
-                                +
-                            </button>
-
-                        </div>
-
-                        <button class="eliminar">
-                            🗑 Eliminar
-                        </button>
-
-                    </div>
-
-                </article>
+                <h1>Carrito de compras</h1>
 
             </div>
 
+            <section class="productos">
 
+                <p>No tienes ningun producto </p>
 
-            <!-- =========================
-                 RESUMEN
-            ========================== -->
+            </section>
 
-            <aside class="resumen">
+        </main>
+                
+        <footer class="pie-de-pagina">
 
-                <h2>
-                    Resumen del pedido
-                </h2>
+            <section class="resumen">
 
+                <h2>Resumen del pedido</h2>
 
-                <div class="resumen-linea">
+                <p>Total: $0</p>
 
-                    <span>
-                        Subtotal
-                    </span>
+                <button class="bt">Finalizar compra</button>
 
-                    <span>
-                        $50.800
-                    </span>
+            </section>
 
-                </div>
+        </footer>
 
-
-                <div class="resumen-linea">
-
-                    <span>
-                        Domicilio
-                    </span>
-
-                    <span>
-                        $3.000
-                    </span>
-
-                </div>
-
-
-                <div class="separador"></div>
-
-
-                <div class="resumen-total">
-
-                    <span>
-                        Total
-                    </span>
-
-                    <strong>
-                        $53.800
-                    </strong>
-
-                </div>
-
-
-                <button class="btn-finalizar">
-                    Finalizar compra
-                </button>
-
-
-                <p class="mensaje-seguridad">
-                    🔒 Compra segura y fácil
-                </p>
-
-            </aside>
-
-        </section>
-
-    </main>
-
-</body>
+    </body>
 
 </html>
+

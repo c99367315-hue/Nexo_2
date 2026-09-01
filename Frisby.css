@@ -10,7 +10,7 @@ body{
 }
 
 header{
-    background:#e30613;
+    background:#DA291C;
     color:white;
     text-align:center;
     padding:25px;
@@ -19,8 +19,6 @@ header{
 header h1{
     font-size:40px;
 }
-
-
 /* =========================
    CONFIGURACIÓN GENERAL
 ========================= */
@@ -53,7 +51,7 @@ body {
 
     height: 75px;
 
-    background: #000000;
+    background: #171717;
 
     display: flex;
 
@@ -67,12 +65,11 @@ body {
 
 }
 
-
 /* LOGO */
 
 .logo {
 
-    color: #e30613;
+    color: #e50914;
 
     font-size: 30px;
 
@@ -111,7 +108,7 @@ body {
 
 .menu a:hover {
 
-    background: #e30613;
+    background: #e50914;
 
     color: white;
 
@@ -120,14 +117,25 @@ body {
 
 .menu .activo {
 
-    background: #e30613;
+    background: #e50914;
 
     color: white;
 
 }
 
+/* LOGO */
 
-/* CATEGORÍAS */
+.logo {
+
+    color: #e50914;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+}
+
+
 
 .categoria{
     width:90%;
@@ -135,22 +143,16 @@ body {
 }
 
 .categoria h2{
-    color:#e30613;
+    color:#DA291C;
     font-size:32px;
     margin-bottom:20px;
 }
-
-
-/* PRODUCTOS */
 
 .productos{
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:25px;
 }
-
-
-/* TARJETAS */
 
 .card{
     background:white;
@@ -161,28 +163,6 @@ body {
     transition:0.3s;
 }
 
-button{
-
-margin:20px 20px;
-
-width:calc(100% - 40px);
-
-height:40px;
-
-border:none;
-
-border-radius:10px;
-
-background:#ff0000;
-
-color:white;
-
-font-weight:bold;
-
-cursor:pointer;
-
-}
-
 .card:hover{
     transform:translateY(-8px);
 }
@@ -191,7 +171,7 @@ cursor:pointer;
     width:100%;
     height:220px;
     object-fit:contain;
-    background:#fff4d6;
+    background:#fff8dc;
     padding:15px;
 }
 
@@ -207,48 +187,7 @@ cursor:pointer;
 }
 
 .card h4{
-    color:#e30613;
+    color:#DA291C;
     font-size:24px;
     margin:15px 0 20px;
-}
-
-<<<<<<< HEAD
-button:hover{
-
-background:rgb(0, 48, 206);
-=======
-
-/* BOTÓN */
-
-.boton {
-
-    display: block;
-
-    margin: 15px auto auto;
-
-    background: #e30613;
-
-    color: white;
-
-    border: none;
-
-    padding: 17px 60px;
-
-    border-radius: 12px;
-
-    font-size: 18px;
-
-    cursor: pointer;
-
-    margin-bottom: 10px;
-
-}
-
-.boton:hover {
-
-    background: #f7c600;
-
-    color: #000000;
->>>>>>> c70aa9cdf0c66a3fcca012c1e58a3135bba381b1
-
 }

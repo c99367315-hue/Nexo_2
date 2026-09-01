@@ -108,7 +108,7 @@ body {
 
 .menu a:hover {
 
-    background: #ff001e;
+    background: #e50914;
 
     color: white;
 
@@ -117,7 +117,7 @@ body {
 
 .menu .activo {
 
-    background: #ff0000;
+    background: #e50914;
 
     color: white;
 
@@ -295,8 +295,9 @@ cursor:pointer;
 }
 
 
+
 button:hover{
 
-background:rgb(0, 48, 206);
+background:#004dcc;
 
 }
