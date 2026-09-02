@@ -1,24 +1,184 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Configuración</title>
-        <link rel="stylesheet" href="configuración.css">
-    </head>
-    <body>
-        <header>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mis pedidos | NEXO</title>
+
+    <link rel="stylesheet" href="mis_pedidos.css">
+</head>
+
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <header class="barra-superior">
+
+        <div class="logo">
+            NEXO
+        </div>
+
+        <nav class="menu">
+            <a href="Inicio.html">🏠 Inicio</a>
+            <a href="Comida.html">🍔 Comida</a>
+            <a href="Restaurantes.html">🍽 Restaurantes</a>
+            <a href="carrito.html">🛒 Carrito</a>
+            <a href="Perfil.html">👤 Perfil</a>
+            <a href="mis_pedidos.html" class="activo">🍴 Mis pedidos</a>
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenido-principal">
+
+        <div class="encabezado">
             <h1>Mis pedidos</h1>
-        </header>
-        <main>
-            <section class="pedidos">
-                <h2>Pedidos realizados</h2>
-                <ul>
-                    <li>Pedido #1 - Fecha: 01/01/2024 - Estado: En proceso</li>
-                    <li>Pedido #2 - Fecha: 15/01/2024 - Estado: Enviado</li>
-                    <li>Pedido #3 - Fecha: 20/01/2024 - Estado: Entregado</li>
-                </ul>
-            </section>
-    </body>
-    
+            <p>Aquí puedes ver el estado de tus pedidos actuales.</p>
+        </div>
+
+
+        <!-- LISTA DE PEDIDOS -->
+        <section class="pedidos">
+
+
+            <!-- PEDIDO 1 - ENVIADO -->
+            <article class="pedido">
+
+                <div class="pedido-superior">
+
+                    <div>
+                        <h2>Pedido #001</h2>
+                        <p class="restaurante">🍔 McDonald's</p>
+                    </div>
+
+                    <span class="estado enviado">
+                        🚚 Enviado
+                    </span>
+
+                </div>
+
+
+                <div class="linea"></div>
+
+
+                <div class="pedido-info">
+
+                    <div class="producto">
+                        <span>🍔</span>
+
+                        <div>
+                            <h3>Combo Big Mac</h3>
+                            <p>Hamburguesa, papas y bebida.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="cantidad">
+                        <p>Cantidad</p>
+                        <strong>1</strong>
+                    </div>
+
+
+                    <div class="total">
+                        <p>Total</p>
+                        <strong>$25.000</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="estado-info">
+
+                    <span>🚚</span>
+
+                    <div>
+                        <strong>Tu pedido está en camino</strong>
+                        <p>El repartidor lleva tu pedido hacia tu ubicación.</p>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PEDIDO 2 - ENTREGADO -->
+            <article class="pedido">
+
+                <div class="pedido-superior">
+
+                    <div>
+                        <h2>Pedido #002</h2>
+                        <p class="restaurante">🥪 Subway</p>
+                    </div>
+
+                    <span class="estado entregado">
+                        ✓ Entregado
+                    </span>
+
+                </div>
+
+
+                <div class="linea"></div>
+
+
+                <div class="pedido-info">
+
+                    <div class="producto">
+                        <span>🥪</span>
+
+                        <div>
+                            <h3>Subway Pollo Teriyaki</h3>
+                            <p>Sándwich acompañado de bebida.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="cantidad">
+                        <p>Cantidad</p>
+                        <strong>1</strong>
+                    </div>
+
+
+                    <div class="total">
+                        <p>Total</p>
+                        <strong>$22.000</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="pedido-entregado">
+
+                    <div class="estado-info">
+
+                        <span>✓</span>
+
+                        <div>
+                            <strong>Pedido entregado</strong>
+                            <p>Esperamos que hayas disfrutado tu comida.</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- BOTÓN PARA CALIFICAR AL REPARTIDOR -->
+                    <a href="Calificar_al_repartidor.html" class="boton-calificar">
+                        ⭐ Calificar al repartidor
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+    </main>
+
+</body>
+
 </html>
