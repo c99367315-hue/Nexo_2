@@ -1,11 +1,11 @@
-<<<<<<< HEAD
+
 * {
 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-=======
+
 *{
     margin:0;
     padding:0;
@@ -38,17 +38,16 @@ header h1{
     padding: 0;
 
     box-sizing: border-box;
->>>>>>> 64ca93804284f3638bf4360884ad59e77f2515ed
 
 }
 
 
-<<<<<<< HEAD
+
 
 body {
 
     background: #f4f7ff;
-=======
+
 body {
 
     font-family: Arial, Helvetica, sans-serif;
@@ -56,17 +55,15 @@ body {
     background: #f7f8fa;
 
     color: #151923;
->>>>>>> 64ca93804284f3638bf4360884ad59e77f2515ed
+
 
 }
 
 
-<<<<<<< HEAD
+
 
 /* BARRA SUPERIOR */
 
-=======
->>>>>>> 64ca93804284f3638bf4360884ad59e77f2515ed
 .barra-superior {
 
     width: 100%;
@@ -83,19 +80,19 @@ body {
 
     padding: 0 50px;
 
-<<<<<<< HEAD
+
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 
 }
 
 
 
-=======
+
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 
 }
 
->>>>>>> 64ca93804284f3638bf4360884ad59e77f2515ed
+
 /* LOGO */
 
 .logo {
@@ -108,11 +105,6 @@ body {
 
 }
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 64ca93804284f3638bf4360884ad59e77f2515ed
 /* MENÚ */
 
 .menu {
@@ -123,13 +115,7 @@ body {
 
     gap: 15px;
 
-}
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 64ca93804284f3638bf4360884ad59e77f2515ed
 .menu a {
 
     color: #cccccc;
@@ -145,11 +131,10 @@ body {
 }
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 64ca93804284f3638bf4360884ad59e77f2515ed
-.menu a:hover {
+
+
+}
 
     background: #e50914;
 
@@ -158,10 +143,9 @@ body {
 }
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 64ca93804284f3638bf4360884ad59e77f2515ed
+
+
 .menu .activo {
 
     background: #e50914;
@@ -170,7 +154,7 @@ body {
 
 }
 
-<<<<<<< HEAD
+
 
 
 /* CONTENIDO */
@@ -186,7 +170,7 @@ body {
     margin-left: auto;
 
     margin-right: auto;
-=======
+
 /* LOGO */
 
 .logo {
@@ -196,13 +180,12 @@ body {
     font-size: 30px;
 
     font-weight: bold;
->>>>>>> 64ca93804284f3638bf4360884ad59e77f2515ed
+
 
 }
 
 
 
-<<<<<<< HEAD
 /* TÍTULO */
 
 .titulo h1 {
@@ -491,7 +474,7 @@ textarea{
 
 
 }
-=======
+
 .categoria{
     width:90%;
     margin:40px auto;
@@ -587,4 +570,3 @@ background:rgb(0, 48, 206);
 
 
 }
->>>>>>> 64ca93804284f3638bf4360884ad59e77f2515ed
