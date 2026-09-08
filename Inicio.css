@@ -787,3 +787,705 @@ h2 {
     }
 
 }
+
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f7f8fa;
+
+    color: #151923;
+}
+
+
+/* =========================
+   BARRA SUPERIOR
+========================= */
+
+.barra-superior {
+    width: 100%;
+    height: 75px;
+
+    background: #171717;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 50px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    color: #e50914;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   MENÚ
+========================= */
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.menu a {
+    color: #cccccc;
+
+    text-decoration: none;
+
+    padding: 12px 18px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+
+.menu a:hover {
+    background: #e50914;
+    color: white;
+}
+
+
+.menu .activo {
+    background: #e50914;
+    color: white;
+}
+
+
+/* =========================
+   HERO GRANDE
+========================= */
+
+.hero {
+    width: 100%;
+
+    /* AHORA EL FONDO ES MUCHO MÁS GRANDE */
+    min-height: 520px;
+
+    padding: 70px 9%;
+
+    display: flex;
+    align-items: flex-start;
+
+    position: relative;
+
+    overflow: visible;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(15, 15, 15, 0.98) 0%,
+            rgba(15, 15, 15, 0.93) 30%,
+            rgba(15, 15, 15, 0.70) 48%,
+            rgba(15, 15, 15, 0.35) 68%,
+            rgba(15, 15, 15, 0.10) 100%
+        ),
+        url("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1800&q=95");
+
+    /* LA IMAGEN TIENE MÁS ESPACIO */
+    background-size: cover;
+
+    /* HACIA LA DERECHA */
+    background-position: center right;
+
+    background-repeat: no-repeat;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+
+    z-index: 1;
+}
+
+
+/* =========================
+   CONTENIDO DEL HERO
+========================= */
+
+.hero-content {
+    width: 52%;
+
+    position: relative;
+
+    z-index: 3;
+
+    padding-top: 35px;
+}
+
+
+.hero h1 {
+    color: white;
+
+    font-size: 52px;
+
+    font-weight: 700;
+
+    line-height: 1.1;
+
+    margin-bottom: 18px;
+
+    text-shadow: 0 3px 10px rgba(0,0,0,0.45);
+}
+
+
+.hero p {
+    color: #eeeeee;
+
+    font-size: 19px;
+
+    line-height: 1.6;
+
+    max-width: 550px;
+
+    margin-bottom: 28px;
+
+    text-shadow: 0 2px 8px rgba(0,0,0,0.45);
+}
+
+
+/* =========================
+   BUSCADOR
+========================= */
+
+.search-box {
+    width: 560px;
+
+    height: 58px;
+
+    background: rgba(255,255,255,0.97);
+
+    border: none;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 0 22px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+
+    transition: 0.3s;
+}
+
+
+.search-box:hover {
+    transform: translateY(-2px);
+}
+
+
+.search-box span {
+    font-size: 22px;
+}
+
+
+.search-box input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   OCULTAR IMAGEN ORIGINAL
+========================= */
+
+.hero-food {
+    display: none;
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+main {
+    width: 100%;
+    background: #f7f8fa;
+}
+
+
+.categories-section,
+.restaurants-section,
+.combos-section {
+    width: 82%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding-left: 28px;
+    padding-right: 28px;
+
+    box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+}
+
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   CATEGORÍAS
+========================= */
+
+.categories-section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    margin-top: -25px;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+.categories {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    overflow-x: auto;
+}
+
+
+.category {
+    border: 1px solid #e5e5e5;
+
+    background: white;
+
+    border-radius: 30px;
+
+    padding: 13px 23px;
+
+    font-size: 15px;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.category:hover {
+    transform: translateY(-2px);
+}
+
+
+.category.active {
+    background: #e31b16;
+
+    color: white;
+
+    border-color: #e31b16;
+}
+
+
+/* =========================
+   RESTAURANTES
+========================= */
+
+.restaurants-section {
+    padding-top: 35px;
+
+    padding-bottom: 35px;
+
+    margin-top: 30px;
+}
+
+
+.restaurants {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 45px;
+}
+
+
+.restaurant-card {
+    background: white;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    min-height: 140px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+
+    transition: 0.3s;
+}
+
+
+.restaurant-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.13);
+}
+
+
+.restaurant-logo {
+    width: 120px;
+
+    height: 140px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 15px;
+}
+
+
+.restaurant-logo img {
+    max-width: 100%;
+
+    max-height: 100%;
+
+    object-fit: contain;
+}
+
+
+.frisby-logo {
+    background: #f58220;
+}
+
+
+.kfc-logo {
+    background: #d71920;
+}
+
+
+.burger-logo {
+    background: #f3e2c3;
+}
+
+
+.restaurant-info {
+    padding: 20px;
+
+    flex: 1;
+}
+
+
+.restaurant-info h3 {
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+
+.restaurant-info p {
+    color: #777777;
+
+    font-size: 14px;
+
+    margin-bottom: 13px;
+}
+
+
+.rating {
+    font-size: 13px;
+
+    color: #555555;
+}
+
+
+.arrow {
+    font-size: 35px;
+
+    color: #555555;
+
+    margin-right: 20px;
+}
+
+
+/* =========================
+   COMBOS
+========================= */
+
+.combos-section {
+    padding-top: 40px;
+
+    padding-bottom: 60px;
+
+    margin-top: 30px;
+}
+
+
+.section-title {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.section-title a {
+    color: #e31b16;
+
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+
+.combo-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 28px;
+}
+
+
+.combo-card {
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 16px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+
+    transition: 0.3s;
+}
+
+
+.combo-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.13);
+}
+
+
+.combo-card h3 {
+    font-size: 17px;
+
+    margin-bottom: 12px;
+}
+
+
+.combo-image {
+    width: 100%;
+
+    height: 170px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+
+.combo-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.combo-card p {
+    color: #555555;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+
+.combo-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.combo-bottom strong {
+    color: #e31b16;
+
+    font-size: 20px;
+}
+
+
+.combo-bottom button {
+    width: 38px;
+
+    height: 38px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #e31b16;
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.combo-bottom button:hover {
+    background: #b91511;
+
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .restaurants {
+        grid-template-columns: 1fr;
+    }
+
+
+    .combo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .hero {
+        min-height: 480px;
+
+        background-size: cover;
+
+        background-position: center;
+    }
+
+
+    .hero-content {
+        width: 70%;
+    }
+
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+
+    .search-box {
+        width: 100%;
+        max-width: 560px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .barra-superior {
+        padding: 0 20px;
+    }
+
+
+    .menu {
+        display: none;
+    }
+
+
+    .hero {
+        min-height: 500px;
+
+        padding: 50px 25px;
+
+        background-size: cover;
+
+        background-position: center;
+    }
+
+
+    .hero-content {
+        width: 100%;
+    }
+
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    .search-box {
+        width: 100%;
+    }
+
+
+    .categories-section,
+    .restaurants-section,
+    .combos-section {
+        width: 90%;
+
+        padding-left: 18px;
+
+        padding-right: 18px;
+    }
+
+
+    .combo-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
