@@ -671,3 +671,86 @@ body {
     }
 
 }
+
+.carrito-contenido {
+
+    width: 82%;
+    max-width: 1250px;
+
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 35px;
+
+    /* FONDO INTERNO NUEVO */
+    position: relative;
+    overflow: hidden;
+
+    padding: 40px;
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0, 0, 0, 0.88),
+            rgba(35, 8, 8, 0.82),
+            rgba(120, 8, 15, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=2000&q=90");
+
+    background-size: cover;
+    background-position: center;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+
+}
+
+/* EFECTO DE LUZ ROJA */
+
+.carrito-contenido::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    right: -250px;
+    top: -250px;
+
+    border-radius: 50%;
+
+    background: rgba(229, 9, 20, 0.18);
+
+    filter: blur(100px);
+
+    pointer-events: none;
+
+}
+
+
+/* CONTENIDO POR ENCIMA DEL FONDO */
+
+.carrito-contenido .productos,
+.carrito-contenido .resumen {
+
+    position: relative;
+    z-index: 2;
+
+}
+
+
+/* TÍTULO SOBRE EL FONDO */
+
+.productos h2 {
+
+    color: white;
+
+    text-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.8);
+
+}

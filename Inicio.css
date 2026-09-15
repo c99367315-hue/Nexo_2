@@ -1489,3 +1489,99 @@ h2 {
     }
 
 }
+
+/* =====================================================
+   FONDO INTERNO - RESTAURANTES DESTACADOS
+   ===================================================== */
+
+.restaurants-section {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(20, 20, 20, 0.82),
+            rgba(20, 20, 20, 0.82)
+        ),
+        url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1600&q=90");
+
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 20px;
+    padding: 35px 28px;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+
+/* Título de restaurantes */
+.restaurants-section h2 {
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =====================================================
+   FONDO INTERNO - COMBOS POPULARES
+   ===================================================== */
+
+.combos-section {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(20, 20, 20, 0.82),
+            rgba(20, 20, 20, 0.82)
+        ),
+        url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=90");
+
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 20px;
+    padding: 40px 28px 60px;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+
+/* Título y "Ver todos" */
+.combos-section h2 {
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.combos-section .section-title {
+    position: relative;
+    z-index: 2;
+}
+
+.combos-section .section-title a {
+    color: #ff3b30;
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   LAS TARJETAS SIGUEN BLANCAS
+   ===================================================== */
+
+.restaurant-card,
+.combo-card {
+    position: relative;
+    z-index: 3;
+}
+
+
+/* =====================================================
+   PEQUEÑO EFECTO VISUAL
+   ===================================================== */
+
+.restaurant-card:hover,
+.combo-card:hover {
+    transform: translateY(-7px);
+}
