@@ -241,27 +241,21 @@ background:rgb(0, 48, 206);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 /* =========================
-   FONDO GENERAL
+   CONFIGURACIÓN GENERAL
 ========================= */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 body {
-    min-height: 100vh;
-
+    background: #f7f8fa;
     color: #151923;
-
-    /* FONDO DE TODA LA SESIÓN */
-    background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.58),
-            rgba(0, 0, 0, 0.58)
-        ),
-        url("https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=2000&q=80");
-
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 
@@ -281,7 +275,7 @@ body {
 
     padding: 0 50px;
 
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
 
     position: relative;
     z-index: 10;
@@ -311,6 +305,7 @@ body {
     gap: 15px;
 }
 
+
 .menu a {
     color: #cccccc;
 
@@ -323,11 +318,13 @@ body {
     transition: 0.3s;
 }
 
+
 .menu a:hover {
     background: #e50914;
 
     color: white;
 }
+
 
 .menu .activo {
     background: #e50914;
@@ -336,59 +333,112 @@ body {
 }
 
 
-/* =========================
-   ENCABEZADO FRISBY
-========================= */
-
-body > header:not(.barra-superior) {
-    background: rgba(218, 41, 28, 0.95);
-
-    color: white;
-
-    text-align: center;
-
-    padding: 25px;
-
-    box-shadow:
-        0 5px 15px rgba(0, 0, 0, 0.25);
-
-    position: relative;
-    z-index: 2;
-}
 
 body > header:not(.barra-superior) h1 {
-    font-size: 40px;
+
+    font-size: 42px;
 
     text-shadow:
-        0 2px 5px rgba(0, 0, 0, 0.3);
+        0 3px 10px rgba(0,0,0,0.8);
 }
 
 
 /* =========================
-   CATEGORÍAS
+   SECCIONES
 ========================= */
 
 .categoria {
-    width: 90%;
 
-    max-width: 1400px;
+    width: 92%;
+
+    max-width: 1450px;
 
     margin: 45px auto;
 
-    padding: 25px;
+    padding: 35px 30px;
 
-    border-radius: 20px;
+    border-radius: 22px;
 
-    /* Transparencia para dejar ver el fondo */
-    background: rgba(255, 255, 255, 0.10);
+    position: relative;
 
-    backdrop-filter: blur(3px);
+    z-index: 2;
+
+    overflow: hidden;
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.35);
 }
 
 
-/* TÍTULO DE CATEGORÍA */
+/* =========================
+   1. POLLO
+========================= */
+
+.categoria:nth-of-type(1) {
+
+    background:
+        linear-gradient(
+            rgba(100, 15, 5, 0.58),
+            rgba(45, 5, 0, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1598103442097-8b74394b95c6?auto=format&fit=crop&w=2000&q=90");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+/* =========================
+   2. ACOMPAÑAMIENTOS
+========================= */
+
+.categoria:nth-of-type(2) {
+
+    background:
+        linear-gradient(
+            rgba(90, 55, 10, 0.58),
+            rgba(40, 20, 5, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=2000&q=90");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+/* =========================
+   3. BEBIDAS
+========================= */
+
+.categoria:nth-of-type(3) {
+
+    background:
+        linear-gradient(
+            rgba(10, 50, 75, 0.58),
+            rgba(5, 20, 35, 0.68)
+        ),
+        url("https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=2000&q=90");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+/* =========================
+   TÍTULOS DE SECCIÓN
+========================= */
 
 .categoria h2 {
+
     color: white;
 
     font-size: 32px;
@@ -396,7 +446,11 @@ body > header:not(.barra-superior) h1 {
     margin-bottom: 25px;
 
     text-shadow:
-        0 3px 8px rgba(0, 0, 0, 0.7);
+        0 3px 10px rgba(0,0,0,0.85);
+
+    position: relative;
+
+    z-index: 2;
 }
 
 
@@ -405,11 +459,16 @@ body > header:not(.barra-superior) h1 {
 ========================= */
 
 .productos {
+
     display: grid;
 
     grid-template-columns: repeat(4, 1fr);
 
     gap: 25px;
+
+    position: relative;
+
+    z-index: 2;
 }
 
 
@@ -418,12 +477,13 @@ body > header:not(.barra-superior) h1 {
 ========================= */
 
 .card {
-    background: rgba(255, 255, 255, 0.97);
+
+    background: rgba(255,255,255,0.97);
 
     border-radius: 18px;
 
     box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.35);
+        0 8px 25px rgba(0,0,0,0.35);
 
     text-align: center;
 
@@ -433,21 +493,21 @@ body > header:not(.barra-superior) h1 {
 }
 
 
-/* EFECTO HOVER */
-
 .card:hover {
+
     transform: translateY(-8px) scale(1.01);
 
     box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.45);
+        0 15px 35px rgba(0,0,0,0.45);
 }
 
 
 /* =========================
-   IMÁGENES
+   IMÁGENES DE PRODUCTOS
 ========================= */
 
 .card img {
+
     width: 100%;
 
     height: 220px;
@@ -465,11 +525,12 @@ body > header:not(.barra-superior) h1 {
 ========================= */
 
 .card h3 {
+
     margin-top: 15px;
 
     font-size: 24px;
 
-    color: #171717;
+    color: #222;
 }
 
 
@@ -478,11 +539,14 @@ body > header:not(.barra-superior) h1 {
 ========================= */
 
 .card p {
+
     color: #666;
 
     margin: 10px;
 
     font-size: 16px;
+
+    line-height: 1.4;
 }
 
 
@@ -491,6 +555,7 @@ body > header:not(.barra-superior) h1 {
 ========================= */
 
 .card h4 {
+
     color: #DA291C;
 
     font-size: 24px;
@@ -504,6 +569,7 @@ body > header:not(.barra-superior) h1 {
 ========================= */
 
 .boton {
+
     display: block;
 
     margin: 15px auto 10px;
@@ -514,7 +580,7 @@ body > header:not(.barra-superior) h1 {
 
     border: none;
 
-    padding: 14px 35px;
+    padding: 14px 40px;
 
     border-radius: 12px;
 
@@ -526,12 +592,9 @@ body > header:not(.barra-superior) h1 {
 }
 
 
-/* BOTÓN AL PASAR EL MOUSE */
-
 .boton:hover {
-    background: #b80710;
 
-    color: white;
+    background: #b80710;
 
     transform: scale(1.04);
 }
@@ -541,22 +604,21 @@ body > header:not(.barra-superior) h1 {
    TABLET
 ========================= */
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
 
     .productos {
+
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .barra-superior {
-        padding: 0 25px;
-    }
-
     .menu {
+
         gap: 5px;
     }
 
     .menu a {
-        padding: 10px 12px;
+
+        padding: 10px;
     }
 }
 
@@ -568,39 +630,48 @@ body > header:not(.barra-superior) h1 {
 @media (max-width: 700px) {
 
     .barra-superior {
+
         height: auto;
+
+        padding: 20px;
 
         flex-direction: column;
 
-        padding: 20px;
+        gap: 15px;
     }
 
-    .logo {
-        margin-bottom: 15px;
-    }
 
     .menu {
+
         flex-wrap: wrap;
 
         justify-content: center;
     }
 
+
     .productos {
+
         grid-template-columns: 1fr;
     }
 
+
     .categoria {
+
         width: 94%;
 
-        padding: 15px;
+        padding: 25px 15px;
     }
 
+
     .categoria h2 {
+
         font-size: 26px;
     }
 
-    body > header:not(.barra-superior) h1 {
-        font-size: 32px;
-    }
-}
 
+    body > header:not(.barra-superior) h1 {
+
+        font-size: 34px;
+    }
+
+}

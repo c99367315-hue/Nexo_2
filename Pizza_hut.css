@@ -303,3 +303,221 @@ body {
     margin-bottom: 10px;
 
 }
+
+
+
+/* =========================================
+   FONDOS INDIVIDUALES - PIZZA HUT
+========================================= */
+
+body {
+    background: #f7f8fa;
+}
+
+
+/* =========================================
+   TODAS LAS SECCIONES
+========================================= */
+
+.categoria {
+    position: relative;
+
+    width: 90%;
+    max-width: 1250px;
+
+    margin: 40px auto;
+    padding: 35px;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+
+/* Capa oscura para que los títulos se vean bien */
+
+.categoria::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    z-index: 0;
+}
+
+
+/* Todo el contenido encima de la imagen */
+
+.categoria > * {
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* =========================================
+   🍕 PIZZAS
+========================================= */
+
+.categoria:nth-of-type(1) {
+
+    background-image:
+        url("https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1800&q=90");
+
+}
+
+
+/* =========================================
+   🧀 ENTRADAS
+========================================= */
+
+.categoria:nth-of-type(2) {
+
+    background-image:
+        url("https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=1800&q=90");
+
+}
+
+
+/* =========================================
+   🥤 BEBIDAS
+========================================= */
+
+.categoria:nth-of-type(3) {
+
+    background-image:
+        url("https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=1800&q=90");
+
+}
+
+
+/* =========================================
+   🍰 POSTRES
+========================================= */
+
+.categoria:nth-of-type(4) {
+
+    background-image:
+        url("https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1800&q=90");
+
+}
+
+
+/* =========================================
+   TÍTULOS DE LAS SECCIONES
+========================================= */
+
+.categoria h2 {
+
+    color: white;
+
+    font-size: 32px;
+
+    margin-bottom: 25px;
+
+    text-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.9);
+
+}
+
+
+/* =========================================
+   TARJETAS DE PRODUCTOS
+========================================= */
+
+.card {
+
+    position: relative;
+
+    z-index: 2;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.25);
+
+}
+
+
+/* =========================================
+   EFECTO DE LAS TARJETAS
+========================================= */
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.35);
+
+}
+
+/* TÍTULO */
+
+.encabezado-pizzahut h1 {
+
+    font-size: 42px;
+
+    margin: 0;
+
+    color: white;
+
+    text-shadow:
+        0 3px 8px rgba(0, 0, 0, 0.8);
+}
+
+
+/* DESCRIPCIÓN */
+
+.encabezado-pizzahut p {
+
+    font-size: 18px;
+
+    margin: 0;
+
+    color: white;
+
+    text-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+
+/* =========================================
+   CELULARES
+========================================= */
+
+@media (max-width: 700px) {
+
+    .encabezado-pizzahut {
+
+        height: 160px;
+
+        flex-direction: column;
+
+        gap: 5px;
+
+        text-align: center;
+
+    }
+
+    .encabezado-pizzahut h1 {
+
+        font-size: 34px;
+
+    }
+
+    .encabezado-pizzahut p {
+
+        font-size: 16px;
+
+    }
+
+}

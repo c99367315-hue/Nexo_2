@@ -206,3 +206,205 @@ align-items: center;
 background: #1900f7;
 color: #000000;
 }
+
+/* =========================================
+   SUBWAY - FONDOS INDIVIDUALES
+========================================= */
+
+body {
+    background: #f4f4f4;
+}
+
+
+
+
+/* =========================================
+   TODAS LAS CATEGORÍAS
+========================================= */
+
+.categoria {
+
+    position: relative;
+
+    width: 90%;
+    max-width: 1400px;
+
+    margin: 40px auto;
+
+    padding: 35px;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.20);
+}
+
+
+/* Capa oscura */
+
+.categoria::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.50);
+
+    z-index: 0;
+}
+
+
+/* Contenido encima de la imagen */
+
+.categoria > * {
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* =========================================
+   🥪 SÁNDWICHES
+========================================= */
+
+.categoria:nth-of-type(1) {
+
+    background-image:
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTScJPhY_-qarPkMyliqoyJKivH7ZqWbSj7mqX52qR7EQ&s=10");
+}
+
+
+/* =========================================
+   🌯 WRAPS
+========================================= */
+
+.categoria:nth-of-type(2) {
+
+    background-image:
+        url("https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=1800&q=90");
+}
+
+
+/* =========================================
+   🥤 BEBIDAS
+========================================= */
+
+.categoria:nth-of-type(3) {
+
+    background-image:
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5PpgZdUK8oAc_u1k2ucTs6nR-P78nezAki8qIbvUV5Q&s=10");
+}
+
+
+/* =========================================
+   TÍTULOS
+========================================= */
+
+.categoria h2 {
+
+    color: white;
+
+    font-size: 32px;
+
+    margin-bottom: 25px;
+
+    text-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.9);
+}
+
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.card {
+
+    position: relative;
+
+    z-index: 2;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.30);
+}
+
+
+/* =========================================
+   EFECTO HOVER
+========================================= */
+
+.card:hover {
+
+    transform: translateY(-8px) scale(1.01);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.40);
+}
+
+
+/* =========================================
+   BOTONES
+========================================= */
+
+.boton {
+
+    transition: 0.3s;
+
+}
+
+
+.boton:hover {
+
+    background: #008c45;
+
+    color: white;
+
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   CELULARES
+========================================= */
+
+@media (max-width: 700px) {
+
+    body > header:not(.barra-superior) {
+
+        width: 94%;
+
+        height: 160px;
+
+    }
+
+    body > header:not(.barra-superior) h1 {
+
+        font-size: 34px;
+
+    }
+
+    .categoria {
+
+        width: 94%;
+
+        padding: 20px;
+
+    }
+
+    .categoria h2 {
+
+        font-size: 26px;
+
+    }
+
+}
